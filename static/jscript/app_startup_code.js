@@ -20,11 +20,11 @@ function predictOnLoad() {
 let model;
 (async function () {
 	model = await tf.loadModel(
-		'http://localhost:3000/final_model_kaggle_version1/model.json'
+		'https://skin-lesion-analyzer-app.onrender.com/final_model_kaggle_version1/model.json'
 	);
 	$('#selected-image').attr(
 		'src',
-		'http://localhost:3000/assets/samplepic.jpg'
+		'https://skin-lesion-analyzer-app.onrender.com/assets/samplepic.jpg'
 	);
 
 	// Hide the model loading spinner
